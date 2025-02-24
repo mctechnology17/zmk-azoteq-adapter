@@ -4,5 +4,8 @@
 config SHIELD_AZOTEQ_ADAPTER_LEFT
     def_bool $(shields_list_contains,azoteq_adapter_left)
 
+config SHIELD_AZOTEQ_ADAPTER_LEFT_ENABLE
+    def_bool $(shields_list_contains,azoteq_adapter_left_enable)
+
 config SHIELD_AZOTEQ_ADAPTER_RIGHT
     def_bool $(shields_list_contains,azoteq_adapter_right)

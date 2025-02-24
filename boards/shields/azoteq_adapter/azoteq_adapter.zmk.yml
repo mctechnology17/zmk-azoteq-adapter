@@ -9,4 +9,5 @@ features:
   - pointer
 siblings:
   - azoteq_adapter_left
+  - azoteq_adapter_left_enable
   - azoteq_adapter_right
