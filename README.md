@@ -1,12 +1,3 @@
----
-FileName: README.md
-Date: 13:55 13.Februar.2025
-Author: Marcos Chow Castro
-Email: mctechnology170318@gmail.com
-GitHub: https://github.com/mctechnology17
-Brief: <brief>
----
-
 > [!CAUTION]
 > THIS MODULE HAS NOT BEEN TESTED, SO I DO NOT RECOMMEND USING IT, IF YOU
 > INSTALL IT YOU DO IT AT YOUR OWN RISK !!!!
