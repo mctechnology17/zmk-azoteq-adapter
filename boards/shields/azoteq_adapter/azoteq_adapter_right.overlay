@@ -6,10 +6,10 @@
 
 #include "azoteq_adapter.dtsi"
 
-&azoteqpoint {
+&iqs5xx {
     status = "okay";
 };
 
-&azoteq_listener {
+&iqs5xx_listener {
     status = "okay";
 };

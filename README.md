@@ -27,8 +27,10 @@ Shields supported:
 Enable the drivers in the config file:
 
 ```conf
+CONFIG_INPUT=y
 CONFIG_INPUT_AZOTEQ_IQS5XX=y
-CONFIG_ZMK_INPUT_AZOTEQ_IQS5XX_IDLE_SLEEPER=y
+# CONFIG_ZMK_INPUT_AZOTEQ_IQS5XX_IDLE_SLEEPER=y
+# CONFIG_INPUT_AZOTEQ_IQS5XX_INIT_PRIORITY=60
 ```
 
 To use this module, first add it to your `config/west.yml` by adding a new
