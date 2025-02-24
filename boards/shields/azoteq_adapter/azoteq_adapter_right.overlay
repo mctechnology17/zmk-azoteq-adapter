@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2020 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "azoteq_adapter.dtsi"
+
+&azoteqpoint {
+    status = "okay";
+};
+
+&azoteq_listener {
+    status = "okay";
+};

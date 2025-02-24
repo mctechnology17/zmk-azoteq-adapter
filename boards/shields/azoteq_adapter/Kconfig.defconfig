@@ -1,0 +1,19 @@
+if SHIELD_AZOTEQ_ADAPTER_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_AZOTEQ_ADAPTER_LEFT || SHIELD_AZOTEQ_ADAPTER_RIGHT
+
+config ZMK_POINTING
+    default y
+
+config I2C
+	default y
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) 2020 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+
+    azoteq_listener: azoteq_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = < &azoteqpoint >;
+    };
+
+};
+
+&pro_micro_i2c {
+    status = "okay";
+
+    azoteqpoint: azoteqpoint@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        status = "okay";
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "1x";
+        sleep;
+    };
+};
+
+/*
+// other option ???
+// Ask for this part and better review the documentation
+&i2c1 {
+    status = "okay";
+
+    azoteq_trackpad: trackpad@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        // dr-gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        rotate-90 = <0>;
+        x-invert = <0>;
+        y-invert = <0>;
+        sleep = <1>;
+        no-taps = <0>;
+        sensitivity = "1x";
+        x-axis-z-min = <5>;
+        y-axis-z-min = <4>;
+        label = "AZOTEQ_TRACKPAD";
+    };
+};
+*/

@@ -1,0 +1,12 @@
+file_format: "1"
+id: azoteq_adapter
+name: Azoteq Adapter
+type: shield
+url: https://github.com/mctechnology17/zmk-azoteq-adapter
+requires: [pro_micro] # xiao??? I not sure hier for now :)
+exposes: [i2c_oled]
+features:
+  - pointer
+siblings:
+  - azoteq_adapter_left
+  - azoteq_adapter_right
