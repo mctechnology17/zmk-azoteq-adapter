@@ -27,7 +27,8 @@ Shields supported:
 Enable the drivers in the config file:
 
 ```conf
-CONFIG_INPUT_PINNACLE=y
+CONFIG_INPUT_AZOTEQ_IQS5XX=y
+CONFIG_ZMK_INPUT_AZOTEQ_IQS5XX_IDLE_SLEEPER=y
 ```
 
 To use this module, first add it to your `config/west.yml` by adding a new
@@ -37,10 +38,8 @@ entry to `remotes` and `projects`:
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: petejohanson # <-- enable the drivers
       url-base: https://github.com/petejohanson
-    - name: mctechnology17 # <-- enable this module
+    - name: mctechnology17 # <-- enable the drivers and this module
       url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
@@ -48,7 +47,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: azoteq-input-module # <-- enable the drivers
-      remote: petejohanson
+      remote: mctechnology17
       revision: main
     - name: zmk-azoteq-adapter # <-- enable this module
       remote: mctechnology17
