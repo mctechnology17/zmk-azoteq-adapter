@@ -40,7 +40,7 @@ entry to `remotes` and `projects`:
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+      url-base: https://github.com/zmkfirmware
     - name: mctechnology17 # <-- enable the drivers and this module
       url-base: https://github.com/mctechnology17
   projects:
