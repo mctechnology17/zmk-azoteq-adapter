@@ -7,8 +7,7 @@
 / {
     iqs5xx_listener: iqs5xx_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
-        // status = "disabled";
+        status = "disabled";
         device = <&iqs5xx>;
     };
 };
