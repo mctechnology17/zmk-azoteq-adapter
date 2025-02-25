@@ -5,13 +5,12 @@
  */
 
 / {
-
     iqs5xx_listener: iqs5xx_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
-        device = < &iqs5xx >;
+        status = "okay";
+        // status = "disabled";
+        device = <&iqs5xx>;
     };
-
 };
 
 &pro_micro_i2c {
