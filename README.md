@@ -44,12 +44,12 @@ Every release says which ZMK version it was tested with. The full list of change
 
 - **Example for the left Shield:**
   ```bash
-  west build -b nice_nano_v2 -- -DSHIELD="corne_left azoteq_adapter_left"
+  west build -b nice_nano//zmk -- -DSHIELD="corne_left azoteq_adapter_left"
   ```
 
 - **Example for the right Shield:**
   ```bash
-  west build -b nice_nano_v2 -- -DSHIELD="corne_right azoteq_adapter_right"
+  west build -b nice_nano//zmk -- -DSHIELD="corne_right azoteq_adapter_right"
   ```
 
 # Configuration
@@ -79,10 +79,10 @@ manifest:
       import: app/west.yml
     - name: azoteq-input-module # <-- enable the drivers
       remote: mctechnology17
-      revision: main
+      revision: zmk-v0.4
     - name: zmk-azoteq-adapter # <-- enable this module
       remote: mctechnology17
-      revision: main
+      revision: zmk-v0.4
   self:
     path: config
 ```
@@ -92,9 +92,9 @@ Now simply indicate in the board and the shield in the `build.yaml` file:
 ```yaml
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_left azoteq_adapter_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_right azoteq_adapter_right
 ```
 

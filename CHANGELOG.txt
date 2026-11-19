@@ -6,6 +6,15 @@ How the versions work (the third number is the ZMK version):
 - v0.0.4.N        versions for the next ZMK version (v0.4)
 - New work is developed on the branch `dev`
 
+# FEATURES v0.0.4 (not released yet, branch `zmk-v0.4`) · next ZMK (Zephyr 4.1)
+=======================================
+Migration to the next ZMK version. This branch does not build with ZMK v0.3: use `main` or `zmk-v0.3` for that.
+
+# CHANGES
+- [x] Builds with the next ZMK together with the branch `zmk-v0.4` of `azoteq-input-module`
+- [x] README: new board names (`nice_nano//zmk`) and the branch `zmk-v0.4` of both modules
+- [ ] Not tested on hardware yet
+
 # FEATURES NEXT (not released yet)
 =======================================
 # CHANGES
